@@ -7,6 +7,6 @@ var app = angular.module("app",[]);
                 $scope.data = res;  
                 console.log(res);
              });
-         	 
+         	user = {}; 
         };
     }]);
