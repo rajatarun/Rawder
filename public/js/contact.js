@@ -1,4 +1,4 @@
-var app = angular.module("app",[]);
+var app = angular.module("app",['ngMaterial']);
 	app.controller("contactController", ['contactService','$scope',function(contactService,$scope){
 		
 		$scope.submit=function(user){
