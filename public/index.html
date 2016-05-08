@@ -18,36 +18,60 @@
 
     <script>
         $(document).ready(function() {
-        $('.images').css('background-image','url(./assets/meat.jpg)');
-    $('#fullpage').fullpage();
+        
+    $('#fullpage').fullpage({css3: true,
+        scrollingSpeed: 1000,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: true,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        scrollOverflow: false,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5});
     setInterval(function(){
          
         var a = ['url(./assets/spices1.jpg)','url(./assets/spices2.jpg)','url(./assets/spices3.jpg)']
         
         //console.log(a);
         $('.first').css('background-image',a[Math.floor(Math.random() * a.length)]);
+<<<<<<< HEAD
  }, 6000);
+=======
+        $('.first').css('-moz-transition',' all 0.3s ease-in');
+$('.first').css('-webkit-transition','all 2s ease-in');
+$('.first').css('-ms-transition','all 2s ease-in');
+$('.first').css('transition','all 2s ease-in');
+
+ }, 3000);
+    setInterval(function () {
+        var s1 = ["RAWDER is a wholesale supplier of raw materials to the food chains aimed at revolutionizing the way the distribution system for food chains work by providing a SPOC model.","We at RAWDER store, provide customers with wide variety of choices on raw materials, customized menu depending on their requirements on quality, quantity and budget for their business","Rawder includes Technology and Analytics to bring insights on purchase data, helping their business to grow."]
+        $(".slideshow").html(s1[Math.floor(Math.random() * s1.length)]);
+$('.slideshow').css('-moz-transition',' all 2s ease-in');
+$('.slideshow').css('-webkit-transition','all 2s ease-in');
+$('.slideshow').css('-ms-transition','all 2s ease-in');
+$('.slideshow').css('transition','all 2s ease-in');
+$('.slideshow').css('color','midnightblue');
+
+
+    },5000)
+>>>>>>> 0a56b3cb6a91546086ad0811aa6962d232b7b4a3
     console.log('hello')
     var i = 0;
-    $('.slider').click(function(){
-        console.log(i)
-        var a = ['url(./assets/fruits.jpg)','url(./assets/meat.jpg)','url(./assets/pulses.jpg)','url(./assets/general.jpg)','url(./assets/rice.jpg)','url(./assets/ta.jpg)','url(./assets/vegetables.jpg)','url(./assets/spices.jpg)']
-        
-        if(i>8){
-            i=0;
-        }
-        $('.images').css('background-image',a[i]);
-        $('.images').css('width','300px');
-        $('.images').css('height','300px');
-        $('.images').css('background-repeat','no-repeat');
-        i++;
-    })
+    
     });
 
     </script>
     <style>
         body {
             line-height: 200%;
+        }
+        .slideshow{
+            color:midnightblue;
         }
         
         .first {
@@ -78,7 +102,7 @@
         }
         
         .title2 {
-            text-align: center;
+            text-align: left;
             color: midnightblue;
             font-size: 50px;
         }
@@ -225,21 +249,25 @@ and act as a Menu card for all Businesses who has menu card.</h3>
         </div>
         <div class="section second">
             <div class="row secondsection">
+                <div class="col-md-1"></div>
                 <div class="col-md-3">
                     <h1 class="title2">About Us</h1>
                 </div>
-                <div class="col-md-8">
-                    <blockquote>
-                        <p class="textjustify">RAWDER = RAW(materials + or)DER</p>
-                        <p class="textjustify">
-                            <br> RAWDER is a wholesale supplier of raw materials to the food chains aimed at revolutionizing
-                            the way the distribution system for food chains work by providing a SPOC model.
-                            <br> We at RAWDER store, provide customers with wide variety of choices on raw materials, customized
-                            menu depending on their requirements on quality, quantity and budget for their business
-                            <br> Rawder includes Technology and Analytics to bring insights on purchase data, helping their
-                            business to grow.
-                        </p>
-                    </blockquote>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-1"></div>    
+                <div class="col-md-10">
+                    
+                        
+                        <h1 class="textjustify slideshow">
+                            RAWDER is a wholesale supplier of raw materials to the food chains aimed at revolutionizing the way the distribution system for food chains work by providing a SPOC model.
+                        </h1>
+                    
                 </div>
 
             </div>
@@ -254,6 +282,7 @@ and act as a Menu card for all Businesses who has menu card.</h3>
                 <div class="col-md-1"></div>
                 <div class="col-md-4">
                     <div class="row">
+                        <img src="assets/f0" alt="" class="img-rounded">
                         <blockquote>
                             <p>SPOC</p>
                             <p>single window vendor consolidation for all your requirements</p>
@@ -334,7 +363,7 @@ and act as a Menu card for all Businesses who has menu card.</h3>
 
                 </div>
                 <div class="col-md-2">
-                    <h1 class="slider"><span class="glyphicon glyphicon-chevron-right"></span></h1></div>
+                </div>
             </div>
 
         </div>
@@ -495,7 +524,7 @@ Rawder saves money and time by reducing purchase issues and Hidden costs, by fol
 
 of contact(SPOC) Model.</h4>
                     <br>
-                    <div class="row">
+                    <div class="row wow">
                         <div class="col-md-4">
                             <h1 class="wwah"><span class=" wwag glyphicon glyphicon-flash"></span></h1></div>
                         <div class="col-md-4">
@@ -503,7 +532,7 @@ of contact(SPOC) Model.</h4>
                         <div class="col-md-4">
                             <h1 class="wwah"><span class=" wwag glyphicon glyphicon-search"></span></h1></div>
                     </div>
-                    <div class="row">
+                    <div class="row wow bounce">
                         <div class="col-md-4">
                             <h3 class="wwat">Lightening Fast Delivery</h3></div>
                         <div class="col-md-4">
@@ -511,7 +540,7 @@ of contact(SPOC) Model.</h4>
                         <div class="col-md-4">
                             <h3 class="wwat">Weekly Analysis Report</h3></div>
                     </div>
-                    <div class="row">
+                    <div class="row bounce">
                         <div class="col-md-4">
                             <h1 class="wwah"><span class=" wwag glyphicon glyphicon-piggy-bank"></span></h1></div>
                         <div class="col-md-4">
