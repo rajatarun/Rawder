@@ -1,96 +1,168 @@
-
-        body {
-            line-height: 200%;
-        }
+@media only screen and (max-device-width:2000px){
         
+        .wow{
+            visibility: hidden;
+        }
+        .slideshow{
+            color:midnightblue;
+        }
+
         .first {
             transition-timing-function: ease-in;
             background-repeat: no-repeat;
             background-size: 100%;
             padding-bottom: 10px;
         }
-        
+
         .slider {
             position: fixed;
             left: 800px;
             padding-top: 30px;
         }
-        
+
         .second {
             background-size: 100%;
         }
-        
+
         .heading {
             padding-top: 200px;
         }
-        
+
         .title {
             text-align: left;
             color: white;
-            font-size: 50px;
+            font-size: 80px;
         }
-        
+
         .title2 {
-            text-align: center;
+            text-align: left;
             color: midnightblue;
             font-size: 50px;
         }
-        
+
         .title3 {
             text-align: center;
             color: midnightblue;
             font-size: 40px;
         }
-        
+
         .text {
-            color: #B0BEC5;
+            color: white;
+            font-size: 30px;
         }
-        
+
         .text2 {
-            color: #B0BEC5;
+            color: black;
             text-align: justify;
         }
-        
+
+.header-section {
+	margin-bottom: 0;
+	margin-top: -120px;
+	-webkit-transition: all ease 1.5s;
+	transition: all ease 1.5s;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header-section.header-floating.floating {
+	margin-top: 0;
+}
+.header-section.navbar-default {
+	background-color: #ffffff;
+	background-color: rgba(255,255,255,0.95);
+	border-bottom-color: #eeeeee;
+}
+.navbar-toggle {
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+.navbar-logo {
+	max-height: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 46px;
+	white-space: nowrap;
+}
+.navbar-logo:before {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+.navbar-nav > li > a {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 25px;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #444444;
+}
         .secondsection {
             padding-top: 50px;
         }
-        
+        .textmenu{
+            font-style: bold;
+            text-align: left;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: white;
+            padding-left: 200px;
+            padding-bottom: 40px;
+            margin: -15px;
+        }
         .thirdsection {
             padding-top: 100px;
             color: black;
         }
-        
+        p.captions{
+            color: black;
+        }
+
         .centeral {
             text-align: center;
             color: white;
         }
-        
+
         .features {
             padding-top: 10px;
             color: white;
             background-color: lightseagreen;
             text-align: left;
         }
-        
+
         .featuresheading {
             font-size: 80px;
         }
-        
+
         p {
             color: white;
         }
-        
+
         .fourthsection {
             padding-top: 10px;
             color: white;
-            background-color: midnightblue;
+            background-color: lightseagreen;
+            
             text-align: center;
         }
-        
+
         .roundcorner {
+            color: lightseagreen;
+            
+        }
+        .roundcorner:hover{
             color: midnightblue;
         }
-        
+
         .images {
             background-image: url('./assets/meat.jpg');
             background-repeat: no-repeat;
@@ -99,63 +171,107 @@
             position: fixed;
             left: 500px;
         }
-        
+         .featuressection > div > div >blockquote{
+             border: 0px solid black;
+         }
+         blockquote{
+             border: 0px solid black;
+         }
+         .aboutustitle{
+             text-decoration: underline;
+             color: white;
+             text-align: center;
+         }
+         .aboutus{
+             font-size: 50px;
+         }
+         .textcenter{
+             text-align: center;
+             color: white;
+             font-size: 18px;
+         }
         .gr {
             padding: 10px;
             background-color: white;
-            border: 1px midnightblue solid;
+            border: 1px lightseagreen;
             border-radius: 30px;
         }
-        
+        .gr:hover{
+            padding: 10px;
+            background-color: white;
+            border: 1px skyblue solid;
+            border-radius: 30px;
+        }
         .fifthsection {
             padding-top: 30px;
         }
-        
+
         .sixthsection {
             background-image: url("./assets/contact.jpg");
             color: white;
-            background-repeat: no-repeat;
+            background-repeat:repeat-x;
             background-size: 100%;
             height: 100%;
-            width: 100%;
+            
         }
-        
+         .pull10px{
+             padding-left: 30px;
+         }
+         .aboutustext{
+             background-color: #4DB6AC;
+             border-radius: 10px;
+             z-index: 2;
+             padding: 30px;
+             color: white;
+             box-shadow: 10px 10px 10px lightgrey;
+         }
         .text6 {
             color: white;
             text-align: center;
         }
-        
+.second{
+    background: firebrick;
+    box-shadow: 1px 5px 10px black;
+    z-index: 3;
+    
+}
         .textjustify {
             text-align: justify;
-            color: black;
+            color: white;
         }
-        
+
         .text5 {
             text-align: left;
             line-height: 110%;
             text-align: justify;
         }
-        
+
         .wwag {
             padding: 10px;
             color: orange;
             border: 1px double orange;
             border-radius: 30px;
         }
-        
+
         .wwah {
             text-align: center;
             align-content: center;
         }
-        
+
         .wwat {
             color: orange;
             text-align: center;
             align-content: center;
         }
-        
+
         .ch {
             width: 100%;
             height: 30vi;
         }
-    
+        .combined{
+            background-color: rgba(255,255,255,0.2);
+            z-index: -1;
+
+        }
+
+    }
