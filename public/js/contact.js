@@ -10,3 +10,18 @@ var app = angular.module("app",['ngMaterial']);
          	user = {}; 
         };
     }]);
+    app.config(function($mdThemingProvider) {
+    // Configure a dark theme with primary foreground yellow
+    $mdThemingProvider.theme('docs-dark')
+      .primaryPalette('blue',{
+          'default':'50'
+      })
+     .dark()
+     $mdThemingProvider.theme('labels')
+      .primaryPalette('blue',{
+          'default':'50'
+      })
+      .backgroundPalette('yellow')
+     
+     
+  });
